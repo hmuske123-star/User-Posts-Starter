@@ -24,5 +24,5 @@ function userHTML(user) {
             <p><b>Phone:</b> ${user.phone}</p>
             <p><b>Website:</b> <a href="https://${user.website}" target="_blank">${user.website}</a></p>
     </div>
-</div>`;
+    </div>`;
 }

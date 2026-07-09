@@ -17,12 +17,14 @@ function showUserPosts(id) {
 }
 
 function userHTML(user) {
-    return `<div class="user-card" onclick="showUserPosts(${user.id})>
-    <div class="user-card__container">
-        <h3>${user.name}</h3>
-            <p><b>Email:</b> ${user.email}</p>
-            <p><b>Phone:</b> ${user.phone}</p>
-            <p><b>Website:</b> <a href="https://${user.website}" target="_blank">${user.website}</a></p>
+return `<div class="user" onclick="showUserPosts(${user.id})">
+    <div class="user-card">
+        <div class="user-card__container">
+            <h3>${user.name}</h3>
+                <p><b>Email:</b> ${user.email}</p>
+                <p><b>Phone:</b> ${user.phone}</p>
+                <p><b>Website:</b> <a href="https://${user.website}" target="_blank">${user.website}</a></p>
+        </div>
     </div>
-    </div>`;
+</div>`;
 }
